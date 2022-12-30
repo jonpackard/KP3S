@@ -1,0 +1,44 @@
+echo:; Home offset:
+                                                                                                                                                              echo:  M206 X0.00 Y4.00 Z0.00
+                                                                                                                                                                                           echo:; Auto Bed Leveling:
+                   echo:  M420 S1 Z10.00 ; Leveling ON
+                                                      echo:  G29 W I0 J0 Z0.13125
+                                                                                 echo:  G29 W I1 J0 Z0.14625
+                                                                                                            echo:  G29 W I2 J0 Z0.14125
+                                                                                                                                       echo:  G29 W I3 J0 Z0.15625
+                                                                                                                                                                  echo:  G29 W I4 J0 Z0.23125
+                                                                                                                                                                                             echo:  G29 W I0 J1 Z0.00375
+                       echo:  G29 W I1 J1 Z0.04625
+                                                  echo:  G29 W I2 J1 Z0.06875
+                                                                             echo:  G29 W I3 J1 Z0.04125
+                                                                                                        echo:  G29 W I4 J1 Z0.11000
+                                                                                                                                   echo:  G29 W I0 J2 Z-0.00125
+                                                                                                                                                               echo:  G29 W I1 J2 Z-0.01125
+                                                                                                                                                                                           echo:  G29 W I2 J2 Z-0.01375
+                      echo:  G29 W I3 J2 Z0.07500
+                                                 echo:  G29 W I4 J2 Z0.14250
+                                                                            echo:  G29 W I0 J3 Z-0.02000
+                                                                                                        echo:  G29 W I1 J3 Z0.00875
+                                                                                                                                   echo:  G29 W I2 J3 Z0.06875
+                                                                                                                                                              echo:  G29 W I3 J3 Z0.09250
+                                                                                                                                                                                         echo:  G29 W I4 J3 Z0.17250
+                   echo:  G29 W I0 J4 Z0.07500
+                                              echo:  G29 W I1 J4 Z0.12375
+                                                                         echo:  G29 W I2 J4 Z0.11625
+                                                                                                    echo:  G29 W I3 J4 Z0.15625
+                                                                                                                               echo:  G29 W I4 J4 Z0.25750
+                                                                                                                                                          echo:; Material heatup parameters:
+                                                                                                                                                                                            echo:  M145 S0 H180.00 B60.00 F0
+                           echo:  M145 S1 H235.00 B80.00 F0
+                                                           echo:; Hotend PID:
+                                                                             echo:  M301 P18.60 I1.48 D58.22
+                                                                                                            echo:; Bed PID:
+                                                                                                                           echo:  M304 P94.42 I28.09 D490.97
+                                                                                                                                                            echo:; Z-Probe Offset:
+                                                                                                                                                                                  echo:  M851 X32.50 Y-7.00 Z-1.80 ; (mm)
+                        echo:; Filament load/unload:
+                                                    echo:  M603 L0.00 U100.00 ; (mm)
+                                                                                    echo:; Filament runout sensor:
+                                                                                                                  echo:  M412 S1 ; Sensor ON
+                                                                                                                                            ok
+
